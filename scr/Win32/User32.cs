@@ -4348,5 +4348,8 @@ namespace Win32
         		
         [DllImport("user32")]
 		public static extern void keybd_event(System.Windows.Forms.Keys bVk, int bScan, int dwFlags, int dwExtraInfo);
-	}
+
+        [DllImport("user32.dll")]
+        static extern bool PrintWindow( IntPtr hWnd, IntPtr hdcBlt, int nFlags );
+    }
 }

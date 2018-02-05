@@ -4350,6 +4350,9 @@ namespace Win32
 		public static extern void keybd_event(System.Windows.Forms.Keys bVk, int bScan, int dwFlags, int dwExtraInfo);
 
         [DllImport("user32.dll")]
-        static extern bool PrintWindow( IntPtr hWnd, IntPtr hdcBlt, int nFlags );
+        public static extern bool PrintWindow( IntPtr hWnd, IntPtr hdcBlt, int nFlags );
+
+        [DllImport("user32.dll")]
+        public static extern bool GetLastInputInfo( out LASTINPUTINFO plii );
     }
 }

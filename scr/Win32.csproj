@@ -134,6 +134,7 @@
     <Compile Include="Win32\KERNINGPAIR.cs" />
     <Compile Include="Win32\KEY_EVENT_RECORD.cs" />
     <Compile Include="Win32\LARGE_INTEGER.cs" />
+    <Compile Include="Win32\LASTINPUTINFO.cs" />
     <Compile Include="Win32\LDT_BYTES.cs" />
     <Compile Include="Win32\LDT_ENTRY.cs" />
     <Compile Include="Win32\LOAD_DLL_DEBUG_INFO.cs" />

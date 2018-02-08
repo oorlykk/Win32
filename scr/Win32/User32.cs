@@ -5,7 +5,7 @@ using System.Windows.Forms;
 
 namespace Win32
 {
-	public class User32
+	public static class User32
 	{
 		public const int APPCLASS_MASK = 15;
 
@@ -2999,53 +2999,17 @@ namespace Win32
 
 		public const string SZDDE_ITEM_ITEMLIST = "TopicItemList";
 
-		public IntPtr HWND_BOTTOM
-		{
-			get
-			{
-				return (IntPtr)1;
-			}
-		}
+		public static IntPtr HWND_BOTTOM = (IntPtr)1;
 
-		public IntPtr HWND_BROADCAST
-		{
-			get
-			{
-				return (IntPtr)65535;
-			}
-		}
+		public static IntPtr HWND_BROADCAST = (IntPtr)65535;
 
-		public IntPtr HWND_DESKTOP
-		{
-			get
-			{
-				return (IntPtr)0;
-			}
-		}
+		public static IntPtr HWND_DESKTOP = (IntPtr)0;
 
-		public IntPtr HWND_TOP
-		{
-			get
-			{
-				return (IntPtr)0;
-			}
-		}
+		public static IntPtr HWND_TOP = (IntPtr)0;
 
-		public IntPtr HWND_NOTOPMOST
-		{
-			get
-			{
-				return (IntPtr)(-2);
-			}
-		}
+		public static IntPtr HWND_NOTOPMOST = (IntPtr)(-2);
 
-		public IntPtr HWND_TOPMOST
-		{
-			get
-			{
-				return (IntPtr)(-2);
-			}
-		}
+		public static IntPtr HWND_TOPMOST = (IntPtr)(-2);
 
 		[DllImport("advapi32")]
 		public static extern int SetServiceBits(IntPtr hServiceStatus, int dwServiceBits, int bSetBitsOn, int bUpdateImmediately);
